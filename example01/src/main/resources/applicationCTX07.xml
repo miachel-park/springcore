@@ -7,6 +7,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
+	<!-- property file로 부터 bean value를 주입하려면 아래와 같은 context:property-placeholder와 xmlns:context와 xsi:schemaLocation이 필요 -->
 	<context:property-placeholder location="classpath:admin.property, classpath:sub_admin.property"/>
 	
     <!-- bean definitions here -->
