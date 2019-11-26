@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myCommand" class="pe.miachel.springcore.example12.AsyncCommand" scope="prototype"/>
+    <bean id="commandManager" class="pe.miachel.springcore.example12.CommandManager">
+    	<lookup-method name="createCommand" bean="myCommand"/>
+    </bean>
+	<bean id="commandManager2" class="pe.miachel.springcore.example12.CommandManagerCoupledSpring"/>
+	
+</beans>
