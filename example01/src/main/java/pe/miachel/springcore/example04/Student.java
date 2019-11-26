@@ -28,7 +28,16 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
+	
+	/*
+	 * @PostConstruct, @PreDestroy annotation을 사용하기 위행서는
+	 * pom.xml에 다음과 같은 dependency가 추가 되어야 함
+	 * 	<dependency>
+  	 *		<groupId>javax.annotation</groupId>
+     *		<artifactId>javax.annotation-api</artifactId>
+  	 *		<version>1.3.2</version>
+	 *	</dependency>
+	 */
 	@PostConstruct
 	public void initMethod() {
 		System.out.println("@PostConstruct-initMethod()");
