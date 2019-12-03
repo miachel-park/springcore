@@ -1,6 +1,6 @@
 package pe.miachel.springcore.example11;
 
-import org.apache.logging.log4j.core.Logger;
+
 import org.slf4j.LoggerFactory;
 
 public class OtherBean {
