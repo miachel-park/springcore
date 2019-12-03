@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
     <bean id="myBean" class="pe.miachel.springcore.example13.OneBean"/>
 
+=======
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    	http://www.springframework.org/schema/beans 
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config/>
+	
+    <!-- bean definitions here -->
+	<bean id="myStudent" class="pe.miachel.springcore.example13.Student">
+		<property name="name" value="miachel sangyong park"/>
+		<property name="age" value="48"/>
+	</bean>
+	
+	<bean id="myGrade" class="pe.miachel.springcore.example13.Grade">
+		<property name="grade" value="98"/>
+	</bean>
+>>>>>>> branch 'master' of http://github.com/miachel-park/springcore
 </beans>
